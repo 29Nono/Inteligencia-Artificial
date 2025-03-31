@@ -24,6 +24,19 @@ Librerías:
 -Re
 -NLTK (Stopwords)
 
+IMPORTANTE:
+Checar si agregaste el path al instalar python y agregarla a el entorno virtual (visual studio code)
+instalarla desde la terminal con los siguientes comandos
+
+pip install numpy
+pip install pandas
+pip install scikit-learn  # para sklearn
+pip install regex  # para re
+pip install nltk
+
+esto instalará todo lo que nescesitamos, ojo son diferentes que las extensiones
+si no da error ya estarian bien instalados
+
 Datos:
 Conjunto de datos SpamAssassin Public Corpus, que contiene 5827 correos etiquetados como “Spam = 1” o “No Spam = 0”.
 
