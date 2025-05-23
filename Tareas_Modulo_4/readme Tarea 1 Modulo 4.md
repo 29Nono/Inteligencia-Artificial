@@ -36,7 +36,7 @@ Objetivo: Simular variaciones en la inclinación de la cabeza
 - Implementación:
 ```python
 A.Rotate(limit=30, p=0.5, border_mode=cv2.BORDER_REFLECT)
-
+```
 Efecto visual:
 
 Original	Rotada +15°	Rotada -25°
@@ -48,10 +48,9 @@ Objetivo: Simular diferentes distancias a cámara
 Rango: ±20% del tamaño original
 
 Implementación:
-
-
+```python
 A.RandomScale(scale_limit=0.2, p=0.5, interpolation=cv2.INTER_CUBIC)
 Efecto visual:
-
+```
 Original	Zoom +20%	Zoom -15%
 Original	Zoom+	Zoom-
