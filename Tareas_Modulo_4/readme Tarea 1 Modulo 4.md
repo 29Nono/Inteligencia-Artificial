@@ -27,3 +27,31 @@ Para mejorar la robustez del modelo, se aplicarán las siguientes transformacion
 - Ejemplo de código (OpenCV):  
   ```python
   adjusted = cv2.convertScaleAbs(image, alpha=1.5, beta=30)  # Aumentar brillo y contraste
+
+### 2. Rotaciones
+Objetivo: Simular variaciones en la inclinación de la cabeza
+
+Rango: ±30 grados (para evitar distorsión)
+
+Implementación:
+
+python
+A.Rotate(limit=30, p=0.5, border_mode=cv2.BORDER_REFLECT)
+Efecto visual:
+
+Original	Rotada +15°	Rotada -25°
+Original	Rot+15	Rot-25
+
+### 3. Cambios de escala (Zoom)
+Objetivo: Simular diferentes distancias a cámara
+
+Rango: ±20% del tamaño original
+
+Implementación:
+
+
+A.RandomScale(scale_limit=0.2, p=0.5, interpolation=cv2.INTER_CUBIC)
+Efecto visual:
+
+Original	Zoom +20%	Zoom -15%
+Original	Zoom+	Zoom-
