@@ -31,12 +31,12 @@ Para mejorar la robustez del modelo, se aplicarán las siguientes transformacion
 ### 2. Rotaciones
 Objetivo: Simular variaciones en la inclinación de la cabeza
 
-Rango: ±30 grados (para evitar distorsión)
+- Rango: ±30 grados (para evitar distorsión)
 
-Implementación:
-
-python
+- Implementación:
+```python
 A.Rotate(limit=30, p=0.5, border_mode=cv2.BORDER_REFLECT)
+
 Efecto visual:
 
 Original	Rotada +15°	Rotada -25°
